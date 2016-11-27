@@ -1,0 +1,320 @@
+@font-face {
+   font-family: "AFKlampenborg-Medium";
+   src: url(../fonts/AFKlampenborg-Medium/afklampenborg-medium-webfont.eot);
+   src: url(../fonts/AFKlampenborg-Medium/afklampenborg-medium-webfont.ttf);
+   src: url(../fonts/AFKlampenborg-Medium/afklampenborg-medium-webfont.woff);
+   src: url(../fonts/AFKlampenborg-Medium/afklampenborg-medium-webfont.woff2);
+ }
+
+@font-face {
+   font-family: "HeliosRegular";
+   src: url(../fonts/HeliosRegular/HeliosExtThin-webfont.eot);
+   src: url(../fonts/HeliosRegular/HeliosExtThin-webfont.ttf);
+   src: url(../fonts/HeliosRegular/HeliosExtThin-webfont.woff);
+   src: url(../fonts/HeliosRegular/HeliosExtThin-webfont.woff2);
+ }
+
+body {
+	background: linear-gradient(#ced8d9, #fff);
+	background-repeat: no-repeat;
+	width: 776px;
+	margin: auto;
+}
+
+.account {
+	float: right;
+	width: 158px;
+	background-color: #fff;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.account span:after {
+	content: "|";
+	margin: 0 7px;
+	color: #959595;
+}
+
+.account span:last-child::after {
+	content: "";
+}
+
+header .registration {
+	font: 400 11px/24px Arial;
+	color: #747474; 
+	margin-left: 22px;
+} 
+
+header .login-link {
+	font: 400 11px/24px Arial;
+	color: #02a4fa;
+}
+
+.logo {
+	margin-left: -4px;
+	margin-top: 41px;
+}
+
+h1 {
+	width: 101px;
+	font: 500 21px/19px "AFKlampenborg-Medium";
+	color: #939598;
+	margin-top: 62px;
+	margin-left: 167px;
+	position: absolute;
+}
+
+.it-company {
+	float: right;
+	font: 400 15px/33px "HeliosRegular";
+	color: #646464;
+	margin-top: 55px;
+	margin-right: -120px;
+}
+
+nav {
+	margin-top: -10px;
+	height: 45px;
+	border-bottom: 1px solid gray;
+}
+
+nav ul {
+	float: right;
+	margin-right: 27px;
+
+}
+
+nav ul li.active-page a {
+	margin: 18px 36px 18px 40px;
+	font: 400 16px/45px Arial;
+	color: #45b8fb;
+}
+
+nav ul li.inactive-page a {
+	margin: 18px 30px 18px 26px;
+	font: 400 16px/44px Arial;
+}
+
+nav ul li:first-child {
+	float: left;
+	color: #45b8fb;
+	background: linear-gradient(#fff, #e8eced);
+	border-top: 1px solid #939598;
+	border-left: 1px solid #939598;
+	border-top-left-radius: 30px;
+}
+
+nav ul li:nth-child(2) {
+	float: left;
+	color: #939598;
+	background-color: #e5e9e9;
+	border-top: 1px solid #939598;
+	border-left: 1px solid #939598;
+	border-bottom: 1px solid #939598;
+}
+
+nav ul li:last-child {
+	float: left;
+	color: #939598;
+	background-color: #e5e9e9;
+	border: 1px solid #939598;
+	border-top-right-radius: 30px;
+}
+aside {
+	float: left;
+	width: 230px;
+}
+
+aside h2 {
+	margin-top: 25px;
+	margin-bottom: 23px;
+}
+
+aside a:link.category {
+	font: 400 20px/33px Arial;
+	color: #03a7fe;
+	background: url(../images/layer-31.png);
+	background-repeat: no-repeat;
+	background-position: 98px 7px;
+    padding-right: 30px;
+}
+
+aside a:hover.category {
+	font: 400 20px/33px Arial;
+	color: #03a7fe;
+	text-decoration: none;
+}
+
+aside a:visited.category {
+	font: 400 20px/33px Arial;
+	color: #03a7fe;
+	text-decoration: none;
+}
+
+ul.link li {
+	border-bottom: 1px solid #cbcac9;
+}
+
+ul.link li:last-child {
+	border-bottom: none;
+	margin-bottom: 49px;
+}
+
+ul.link a:link {
+	font: 400 14px/33px Arial;
+	color: #555;
+	padding-left: 15px;
+	background: url(../images/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+}
+
+.rss {
+	text-align: center;
+	padding: 20px 0;
+	border-top: 1px solid #cbcac9;
+	border-bottom: 1px solid #cbcac9;
+}
+
+.rss a {
+	font: 500 21px/19px "AFKlampenborg-Medium";
+	color: #939598;
+	background: url(../images/vector.png);
+	background-repeat: no-repeat;
+	background-position: 22px 2px;
+	border: 3px solid #ff9600;
+	border-radius: 50px;
+	padding: 3px 25px 2px 45px;
+}
+
+.rss a:hover {
+	text-decoration: none;
+}
+
+.rss a:visited {
+	border: 3px solid #ff9600;
+}
+
+.sponsors li {
+	text-align: center;
+	margin-top: 25px;
+}
+
+.sponsors a:link {
+	filter: grayscale(100%);
+}
+
+.sponsors a:hover {
+	filter: grayscale(0);
+}
+
+.company {
+	float: right;
+	
+}
+
+.company h2 {
+	margin-top: 64px;
+	margin-bottom: 16px;
+	font: 400 26px/33px Arial;
+	color: #010101;
+}
+
+.company section {
+	border-top: 1px solid #00a7fb;
+	width: 528px;
+	height: 380px;
+}
+.company h3 {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	font: 400 22px/33px Arial;
+	color: #03a7fe;
+}
+
+.company img {
+	float: left;
+	clear: left;
+	margin: 17px 21px 160px 11px;
+}
+
+.about-company {
+	width: 393px;
+	float: right;
+}
+.about-company dt {
+	float: left;
+	background-color: #dfe5e6;
+	font: 400 12px/33px Arial;
+	color: #505050;
+	width: 50%;
+	padding-left: 4px;
+}
+
+.about-company dd {
+	margin-bottom: 3px;
+	background-color: #dfe5e6;
+	font: 400 12px/33px Arial;
+	color: black;
+}
+
+.about-company dd a:link {
+	font: 400 12px/33px Arial;
+	color: #21b0fb;
+}
+
+.ceo-contacts {
+	width: 393px;
+	float: right;
+}
+
+.ceo-contacts dt {
+	float: left;
+	font: 400 12px/33px Arial;
+	color: #505050;
+	width: 50%;
+	padding-left: 4px;
+}
+.ceo-contacts dd {
+	background-color: #dfe5e6;
+	font: 400 12px/33px Arial;
+	color: black;
+}
+
+.ceo-contacts dd:nth-child(odd) {
+	background-color: #eef1f2;
+}
+
+
+.ceo-contacts a:link {
+	margin-left: 50%;
+	font: 400 12px/33px Arial;
+	color: black;
+}
+
+.fa {
+	margin-right: 2px;
+	font-size: 15px;
+}
+
+footer {
+	display: block;
+	clear: both;
+	height: 60px;
+	border-top: 1px solid #b5b5b7;
+} 
+
+footer p {
+	float: right;
+	width: 491px;
+	margin-right: 25px;
+	background-color: #d9dada;
+	font: 400 10px/33px Arial;
+	color: #78797b;
+	padding-left: 12px;
+    border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-image: url(../images/vector-smart-object.png);
+	background-repeat: no-repeat;
+	background-position: 450px 7px;
+}
