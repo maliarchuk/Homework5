@@ -26,7 +26,7 @@ a {
 }
 
 body{
-	background: linear-gradient(#ced8d9, #fff 30%) no-repeat;
+	background: linear-gradient(#ced8d9, #fff 30%) no-repeat;//префиксы!
 } 
 
 .wrapper {
@@ -62,7 +62,7 @@ header .account {
 		padding: 20px;
 		border-radius: 30px 0 30px 30px;
 		right: 0;
-    	margin-right: -68px;
+    	margin-right: -68px;//если абсолют, то никаких маржинов
 	}
 	
 	form {
@@ -74,7 +74,7 @@ header .account {
 		margin-bottom: 7px;
 		padding-left: 7px;
 		font: 400 18px/32px Arial;
-		background: #d5f1fa;
+		background: #d5f1fa;//лучше background-color
 		border-style: none;
 		border-radius: 7px;
 	}
@@ -91,7 +91,7 @@ header .account {
 .avatar {
 	padding-top: 8px;
 	display: block; 
-	background: radial-gradient(#94dbff 50%, #17b0ff) no-repeat;
+	background: radial-gradient(#94dbff 50%, #17b0ff) no-repeat;//префикс
 	border-radius: 10px;
 }
 
@@ -108,7 +108,7 @@ a.upload {
 
 .registration input.submit {
 	float: right;
-	clear: both;
+	clear: both;//эта и строка выше - КПД = 0
 	width: 15%;
 	border-style: none;
 	border-radius: 5px;
@@ -125,7 +125,7 @@ a.upload {
 	margin-right: 20px;
 	
 	.popup {
-		visibility: hidden;
+		visibility: hidden;//нельзя так. При таком свойстве элемент место занимает. Лучше display: none;
 		background: #fff;
 		border-radius: 30px 0 30px 30px;
 		padding: 0 20px 20px 20px;
@@ -142,7 +142,7 @@ a.upload {
 		input {
 			width: 160px;
 			margin-right: 10px;
-			background: #d5f1fa;
+			background: #d5f1fa;//по всему документу посмотри подобные свойства
 			border-style: none;
 			padding-left: 7px;
 			font: 400 18px/32px Arial;
@@ -220,16 +220,16 @@ nav {
 		li:first-child {
 			float: left;
 			color: #45b8fb;
-			background: linear-gradient(#fff 20%, #E0E7E7 90%);
+			background: linear-gradient(#fff 20%, #E0E7E7 90%);//префикс
 			border-top: 1px solid #939598;
 			border-left: 1px solid #939598;
 			border-top-left-radius: 30px;
 		}
 
-		li:nth-child(2) {
+		li:nth-child(2) {//у тебя же одинаковые большинство свойств
 			float: left;
 			color: #939598;
-			background-color: #e5e9e9;
+			background-color: #e5e9e9;//это лучше по классам делать. Марина говорила про это
 			border-top: 1px solid #939598;
 			border-left: 1px solid #939598;
 			border-bottom: 1px solid #939598;
@@ -312,7 +312,7 @@ ul.link a:link {
 }
 
 .sponsors a:hover {
-	-webkit-filter: grayscale(0);
+	-webkit-filter: grayscale(0);//а просто фильтр?
 }
 
 .company {
@@ -467,7 +467,7 @@ article {
 .rating {
 	float: left;
 	width: 60px;
-	background: url(../images/rating.png);
+	background: url(../images/rating.png);// это динамический рейтинг - его надо было делать Font awsome
 	background-repeat: no-repeat;
 	background-position: 2px 5px;
 	padding-left: 60px;
@@ -526,6 +526,6 @@ footer {
 		color: #78797b;
 		border-bottom-left-radius: 15px;
 		border-bottom-right-radius: 15px;
-		background: #d9dada url(../images/vector-smart-object.png) no-repeat 450px 7px;
+		background: #d9dada url(../images/vector-smart-object.png) no-repeat 450px 7px; //Логотип - всегда картинка
 	}
 }
